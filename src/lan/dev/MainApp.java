@@ -1,6 +1,5 @@
 package lan.dev;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,11 +14,17 @@ public class MainApp {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			DriverManager.getConnection(BD_URL, USER, PASS);
 			System.out.println("Ket noi thanh cong");
-			
-		}catch(Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
+		demo();
+
+	}
+
+	private static void demo() {
+		// TODO Auto-generated method stub
 		
 	}
 
